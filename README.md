@@ -49,6 +49,11 @@ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O 
 
 # install zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+# install zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 
+
+
 ```
 
 To use zsh as the default one, add the following two lines to `~/.bash_profile` and reconnect the server.
@@ -66,6 +71,7 @@ ZSH_THEME="flazz"
 plugins=( 
     git
     zsh-autosuggestions
+    zsh-syntax-highlighting
 )
 ```
 
